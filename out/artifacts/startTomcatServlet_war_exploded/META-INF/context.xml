@@ -1,9 +1,0 @@
-<Context>
-    <Resource name="course"
-              auth="Container"
-              type="javax.sql.DataSource"
-              driverClassName="oracle.jdbc.OracleDriver"
-              url="jdbc:oracle:thin:@localhost:1521/xe"
-              username="ismayil"
-              password="12345"/>
-</Context>
