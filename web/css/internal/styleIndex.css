@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px 5px 0px 5px;
+}
+
+/* Style the header */
+header {
+    background-color: #4CAF50;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+header h2{
+    font-family: "Book Antiqua";
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    /*float: left;*/
+    /*width: 28%;*/
+    /*height: 600px; !* only for demonstration, should be removed *!*/
+    /*background: #4CAF50;*/
+    /*padding: 20px;*/
+
+    float: left;
+     width: 25%;
+    height: 600px;
+    background: #4CAF50;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    width: 400px;
+    height: 300px;
+    list-style-type: none;
+    padding: 0;
+}
+ul li{
+    height: 60px;
+}
+
+article {
+    /*float: left;*/
+    /*padding: 20px;*/
+    /*width: 72%;*/
+    /*background-color: #f1f1f1;*/
+    /*height: 600px; !* only for demonstration, should be removed *!*/
+    float: left;
+    padding: 20px;
+    width: 75%;
+    background-color: #f1f1f1;
+    height: 600px;
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 18px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+form label{
+    font-family: "Berlin Sans FB";
+}
+form input{
+    background: #f1f1f1;
+    margin: 3px 10px 0px 5px;
+}
+form{
+    margin: 0% 16%;
+
+}
+form legend{
+    color: #4CAF50;
+    font-family: "Agency FB";
+    font-size: 25px;
+}
+form fieldset{
+    border-color: #4CAF50;
+}
+#surname,#email{
+    margin: 7px 0px 0px 10px;
+}
+#name{
+    margin: 6px -9px 6px 6px;
+}
+#number{
+    margin: 7px 0px 0px 23px;
+}
+#newDiv{
+    margin-left: 36%;
+    /*background-color: #1400f5;*/
+}
+/*table, th, td {*/
+/*    border: 1px solid black;*/
+/*    border-collapse: collapse;*/
+/*}*/
+table th {
+    text-align: left;
+}
+#personType {
+    width: 199px;
+    margin: 3px  0px 0px 4px;
+}
+
+#fieldsetForTab {
+    width: 200px;
+    margin: 0px 0px 0px -163px;
+}
+#imageOfUser{
+    border-radius: 50%;!important;
+    width: 232px;!important;
+}
+/*.btn{*/
+/*    background-color: DodgerBlue;*/
+/*    border: none;*/
+/*    color: white;*/
+/*    padding: 12px 16px;*/
+/*    font-size: 16px;*/
+/*    cursor: pointer;*/
+/*}*/
